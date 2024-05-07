@@ -1,11 +1,44 @@
 @import '~bootstrap/scss/bootstrap';
 
 // TODO -> Add the root for the color palette!!
+:root {
+    --dc-top-header: #0282f9;
+    --dc-main-bgc: #1c1c1c;
+    --dc-white: #ffffff;
+    --dc-footer: #303030;
+}
 
 header {
-    background-image: url('../img/jumbotron.jpg');
-    background-size: 100%;
-    min-height: 30vh;
+    margin-top: 2rem;
+}
+
+.jumbo_img {
+    height: 10%;
+    width: 100%;
+}
+
+
+
+main {
+    padding: 3rem;
+    background-color: var(--dc-main-bgc);
+    color: var(--dc-white);
+
+    .cards {
+        height: 250px;
+    }
+
+
+    .buy {
+        height: 150px;
+        background-color: var(--dc-top-header);
+        width: 100%;
+        margin-top: 2rem;
+
+        img {
+            height: 100px;
+        }
+    }
 }
 
 footer {
@@ -14,6 +47,26 @@ footer {
     min-height: 50hv;
 
     .container {
-        color: white;
+        color: var(--dc-white);
     }
+
+    .button-sign {
+        background-color: var(--dc-footer);
+        height: 100px;
+        width: 100%;
+        margin-top: 2rem;
+
+        p {
+            color: var(--dc-top-header);
+            font-size: 25px;
+        }
+    }
+
+    .sign-button {
+        background-color: var(--dc-footer);
+        border: 1px solid var(--dc-top-header);
+        color: var(--dc-white);
+        height: 50px;
+    }
+
 }

@@ -12,11 +12,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get("/", function () {
+    return view("home");
+})->name("home");
 
-Route::get('/', function () {
+
+Route::get('/comics', function () {
     $comics = config('db.comics');
     // dd($comics);
     return view('comics', compact('comics'));
-})->name('home');
-
-
+})->name('comics');

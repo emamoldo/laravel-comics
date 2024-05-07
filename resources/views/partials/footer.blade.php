@@ -1,5 +1,5 @@
 <footer class="">
-    <div class="container ">
+    <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gap-3">
             <div class="col">
                 <h3>DC COMICS</h3>
@@ -53,10 +53,16 @@
         
         <p>All Site Content TM and (c) 2020 DC Entertainment, unless otherwise noted here. All rights reserved.</p>
         <p>Cookies Settings</p>
-    
+
+        <!-- <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt=""> -->
+        <!-- TODO: fix the img logo -->
+
+    </div>
+
+    <div class="button-sign">
         <div class="d-flex justify-content-around align-items-center">
             <div class="sign-btn">
-                <button type="button">SIGN-UP NOW!</button>
+                <button class="sign-button" type="button">SIGN-UP NOW!</button>
             </div>
     
             <div class="sign-follow d-flex align-items-center gap-3">            

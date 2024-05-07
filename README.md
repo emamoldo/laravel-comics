@@ -90,3 +90,19 @@ Bonus:
             <a class="nav-link {{Route::currentRouteName() === 'fans' ? 'nav-active' :''}}" href="{{route('fans')}}">FANS</a>
             <a class="nav-link {{Route::currentRouteName() === 'news' ? 'nav-active' :''}}" href="{{route('news')}}">NEWS</a>
             <a class="nav-link {{Route::currentRouteName() === 'shop' ? 'nav-active' :''}}" href="{{route('shop')}}">SHOP</a> <!-- Fare Nav a tendina -->
+
+
+
+    <div class="container">
+        @foreach ($comics as $comic)
+        <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
+            <div class="card border-0">
+                <img class="card-img-top" src="{{$comic['thumb']}}" alt="">
+                <div class="card-body">
+                    {{$comic['title']}}
+                </div>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</div>
