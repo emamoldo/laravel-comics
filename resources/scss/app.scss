@@ -1,0 +1,19 @@
+@import '~bootstrap/scss/bootstrap';
+
+// TODO -> Add the root for the color palette!!
+
+header {
+    background-image: url('../img/jumbotron.jpg');
+    background-size: 100%;
+    min-height: 30vh;
+}
+
+footer {
+    background-image: url('../img/footer-bg.jpg');
+    background-size: 100%;
+    min-height: 50hv;
+
+    .container {
+        color: white;
+    }
+}
