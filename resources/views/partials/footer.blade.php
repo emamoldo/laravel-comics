@@ -1,6 +1,6 @@
 <footer class="">
     <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gap-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gap-3 position-relative">
             <div class="col">
                 <h3>DC COMICS</h3>
                 <ul class="list-unstyled">
@@ -49,17 +49,19 @@
                     <li>DC Power Visa</li>
                 </ul>
             </div>
+
+            <div class="bg-logo position-absolute">
+                <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
+            </div>
         </div>
 
         <p>All Site Content TM and (c) 2020 DC Entertainment, unless otherwise <a href="">noted here</a>. All rights
             reserved.</p>
         <a href="">Cookies Settings</a>
 
-
-        <!-- TODO: fix the img logo -->
-        <!-- <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt=""> -->
-
     </div>
+
+
 
     <div class="button-sign">
         <div class="d-flex justify-content-around align-items-center">

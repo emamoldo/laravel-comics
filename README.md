@@ -77,13 +77,3 @@ Concentratevi sul layout:
 
 Bonus:
 - Create più pagine che estendono lo stesso layout
-
-
-
-
-Route::get('/comics/{id}', function ($id) {
-    abort_unless($id >= 0 && $id < count(config('db.comics')), 404);
-    $comiccard = config('db.products'[$id]);
-    // return view('comiccard', compact('comiccard'));
-    dd($comiccard);
-})->name('comiccard');
