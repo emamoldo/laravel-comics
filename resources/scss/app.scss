@@ -6,15 +6,39 @@
     --dc-main-bgc: #1c1c1c;
     --dc-white: #ffffff;
     --dc-footer: #303030;
+    --dc-main-char: #f6f6f6;
+}
+
+.nav-active {
+    border-bottom: 2px solid var(--dc-top-header);
+    color: var(--dc-top-header);
 }
 
 header {
     margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    .logo {
+        height: 75px;
+        width: 75px;
+    }
+
+    .links {
+        a {
+            color: black;
+        }
+    }
 }
 
-.jumbo_img {
-    height: 10%;
-    width: 100%;
+// .jumbo_img {
+//     height: 30%;
+//     // Need to fix the img
+//     width: 100%;
+// }
+
+.jumbo {
+    background-image: url(../img/jumbotron.jpg);
+    background-size: 300px 100px;
 }
 
 
@@ -48,6 +72,12 @@ footer {
 
     .container {
         color: var(--dc-white);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        a {
+            text-decoration: none;
+        }
     }
 
     .button-sign {

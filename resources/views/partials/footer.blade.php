@@ -12,7 +12,7 @@
                     <li>Videos</li>
                     <li>News</li>
                 </ul>
-                
+
                 <div class="col">
                     <h3>SHOP</h3>
                     <ul class="list-unstyled">
@@ -21,7 +21,7 @@
                     </ul>
                 </div>
             </div>
-        
+
             <div class="col">
                 <h3>DC</h3>
                 <ul class="list-unstyled">
@@ -38,7 +38,7 @@
                     <li>Contact Us</li>
                 </ul>
             </div>
-        
+
             <div class="col">
                 <h3>SITES</h3>
                 <ul class="list-unstyled">
@@ -50,12 +50,14 @@
                 </ul>
             </div>
         </div>
-        
-        <p>All Site Content TM and (c) 2020 DC Entertainment, unless otherwise noted here. All rights reserved.</p>
-        <p>Cookies Settings</p>
 
-        <!-- <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt=""> -->
+        <p>All Site Content TM and (c) 2020 DC Entertainment, unless otherwise <a href="">noted here</a>. All rights
+            reserved.</p>
+        <a href="">Cookies Settings</a>
+
+
         <!-- TODO: fix the img logo -->
+        <!-- <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt=""> -->
 
     </div>
 
@@ -64,8 +66,8 @@
             <div class="sign-btn">
                 <button class="sign-button" type="button">SIGN-UP NOW!</button>
             </div>
-    
-            <div class="sign-follow d-flex align-items-center gap-3">            
+
+            <div class="sign-follow d-flex align-items-center gap-3">
                 <p>FOLLOW US</p>
                 <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="">
                 <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="">

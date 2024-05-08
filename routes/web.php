@@ -22,3 +22,35 @@ Route::get('/comics', function () {
     // dd($comics);
     return view('comics', compact('comics'));
 })->name('comics');
+
+Route::get("/movies", function () {
+    return view("movies");
+})->name("movies");
+
+Route::get("/tv", function () {
+    return view("tv");
+})->name("tv");
+
+Route::get("/games", function () {
+    return view("games");
+})->name("games");
+
+Route::get("/collectibles", function () {
+    return view("collectibles");
+})->name("collectibles");
+
+Route::get("/videos", function () {
+    return view("video");
+})->name("videos");
+
+Route::get("/fans", function () {
+    return view("fans");
+})->name("fans");
+
+Route::get("/mews", function () {
+    return view("news");
+})->name("news");
+
+Route::get("/shop", function () {
+    return view("shop");
+})->name("shop");
