@@ -67,7 +67,7 @@
                 <button class="sign-button" type="button">SIGN-UP NOW!</button>
             </div>
 
-            <div class="sign-follow d-flex align-items-center gap-3">
+            <div class="sign-follow d-flex align-items-center my-3">
                 <p>FOLLOW US</p>
                 <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="">
                 <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="">

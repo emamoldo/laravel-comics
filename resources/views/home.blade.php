@@ -1,4 +1,4 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app') -->
 
 @section('content')
 <div class="container">
@@ -43,5 +43,6 @@
         <p>On Sale Date:</p>
         <p>{{$comic['sale_date']}}</p>
     </div>
+
 </div>
 @endsection

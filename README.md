@@ -77,16 +77,3 @@ Concentratevi sul layout:
 
 Bonus:
 - Create più pagine che estendono lo stesso layout
-
-
-    ## For the link in the pages:
-            <a class="nav-link {{Route::currentRouteName() === 'characters' ? 'nav-active' : ''}}" href="{{route('comics')}}">CHARACTERS</a>
-            <a class="nav-link {{Route::currentRouteName() === 'comics' ? 'nav-active' : ''}}" href="{{route('comics')}}">COMICS</a>
-            <a class="nav-link {{Route::currentRouteName() === 'movies' ? 'nav-active' : ''}}" href="{{route('movies')}}">MOVIES</a>
-            <a class="nav-link {{Route::currentRouteName() === 'tv' ? 'nav-active' :''}}" href="{{route('tv')}}">TV</a>
-            <a class="nav-link {{Route::currentRouteName() === 'games' ? 'nav-active' :''}}" href="{{route('games')}}">GAMES</a>
-            <a class="nav-link {{Route::currentRouteName() === 'collectibles' ? 'nav-active' :''}}" href="{{route('collectibles')}}">COLLECTIBLES</a>
-            <a class="nav-link {{Route::currentRouteName() === 'videos' ? 'nav-active' :''}}" href="{{route('videos')}}">VIDEOS</a>
-            <a class="nav-link {{Route::currentRouteName() === 'fans' ? 'nav-active' :''}}" href="{{route('fans')}}">FANS</a>
-            <a class="nav-link {{Route::currentRouteName() === 'news' ? 'nav-active' :''}}" href="{{route('news')}}">NEWS</a>
-            <a class="nav-link {{Route::currentRouteName() === 'shop' ? 'nav-active' :''}}" href="{{route('shop')}}">SHOP</a> <!-- Fare Nav a tendina -->

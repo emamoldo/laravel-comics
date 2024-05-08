@@ -1,8 +1,12 @@
 <header>
-    <section class="">
-        <!-- <a class="nav-link" href="">DC POWER VISA</a>
-        <a href="">ADDITIONAL SC SITES</a> -> Fare Nav a tendina -->
-    </section>
+    <div class="nav-cont">
+        <section class="container nav-links d-flex flex-row-reverse">
+            <a href="">DC POWER VISA</a>
+            <a href="">ADDITIONAL SC SITES
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+        </section>
+    </div>
 
     <div class="d-flex justify-content-center align-items-center g-5">
         <div>
@@ -37,9 +41,12 @@
                 href="{{route('news')}}">NEWS</a>
 
             <a class="nav-link {{Route::currentRouteName() === 'shop' ? 'nav-active' : ''}}"
-                href="{{route('shop')}}">SHOP</a> <!-- Fare Nav a tendina -->
+                href="{{route('shop')}}">SHOP
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
 
-            <input type="text" name="" id="" placeholder="Search">
         </nav>
+        <input type="text" name="" id="" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
     </div>
 </header>
