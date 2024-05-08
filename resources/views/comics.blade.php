@@ -11,16 +11,25 @@
 <div class="container d-flex flex-column align-items-center">
     <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
         <!-- Cicle foreach for the images and the title of the comics -->
-        @foreach ($comics as $comic)
+
+
+
+        @foreach ($comics as $index => $comic)
             <div class="col">
-                <div class="card border-0">
-                    <img class="cards card-img-top" src="{{$comic['thumb']}}" alt="">
-                </div>
-                <div class="card-body">
-                    {{$comic['title']}}
-                </div>
+                <a href="{{route('comiccard', ['id' => $index])}}">
+                    <div class="card border-0">
+                        <img class="cards card-img-top" src="{{$comic['thumb']}}" alt="">
+                    </div>
+                    <div class="card-body">
+                        {{$comic['title']}}
+                    </div>
+                </a>
             </div>
         @endforeach
+
+
+
+
     </div>
     <!-- the "LOAD MORE" button -->
     <button class="btn btn-primary" type="button">LOAD MORE</button>

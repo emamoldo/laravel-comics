@@ -61,18 +61,11 @@ header {
     }
 }
 
-
-
-
 .jumbo {
     background-image: url(../img/jumbotron.jpg);
     background-size: 100%;
     height: 400px;
 }
-
-
-
-
 
 main {
     padding: 3rem;
@@ -87,6 +80,11 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    a {
+        color: var(--dc-white);
+        text-decoration: none;
     }
 
     .cards {

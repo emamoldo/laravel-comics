@@ -24,6 +24,16 @@ Route::get('/comics', function () {
     return view('comics', compact('comics'));
 })->name('comics');
 
+
+Route::get('/comics/{id}', function ($id) {
+    // dd($comiccard);
+
+    abort_unless($id >= 0 && $id < count(config('db.comics')), 404);
+    $comiccard = config('db.comics')[$id];
+    return view('comiccard', compact('comiccard'));
+})->name('comiccard');
+
+
 Route::get("/movies", function () {
     return view("movies");
 })->name("movies");
